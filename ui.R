@@ -6,7 +6,7 @@ library(ggplot2)
 headerPanel("Early Warning Signals Toolbox - Quick Detection Analysis"),
 sidebarPanel(
 selectInput(inputId = 'timeseries', "Choose a time-series:",
-choices = c("simulated - overharvested resource", "real-world - climate data", "User data")),
+choices = c("simulated - overharvested resource", "real-world - climate data")),
 
 selectInput(inputId = 'analysis',
 label = 'Analysis',

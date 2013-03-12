@@ -23,8 +23,7 @@ shinyServer(function(input, output) {
     datasetInput <- reactive({
         switch(input$timeseries,
         "simulated - overharvested resource" = simulateddata,
-        "real-world - climate data" = climatedata, 
-        "User data" = userdata)
+        "real-world - climate data" = climatedata)
     })
     
   output$plot <- reactivePlot(function() {
