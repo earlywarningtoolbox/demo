@@ -14,9 +14,8 @@ library(earlywarnings)
 simulateddata <- read.csv("fold_simulated_data.csv")
 
 # Real data
-climatedata <- read.csv("climate_data.csv")
-
-userdata <- climatedata
+#climatedata <- read.csv("climate_data.csv")
+#userdata <- climatedata
  
 shinyServer(function(input, output) {
  
