@@ -16,13 +16,15 @@ simulateddata <- read.csv("fold_simulated_data.csv")
 # Real data
 climatedata <- read.csv("climate_data.csv")
 
+userdata <- climatedata
  
 shinyServer(function(input, output) {
  
     datasetInput <- reactive({
         switch(input$timeseries,
         "simulated - overharvested resource" = simulateddata,
-        "real-world - climate data" = climatedata)
+        "real-world - climate data" = climatedata, 
+        "User data" = userdata)
     })
     
   output$plot <- reactivePlot(function() {
