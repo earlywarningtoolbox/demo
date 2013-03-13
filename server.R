@@ -1,5 +1,5 @@
 library(shiny)
-source(qda_RShiny)
+source("qda_RShiny")
 
 if (try(library(ggplot2)) == "try-error") {install.packages("ggplot2")}
 library(ggplot2)
