@@ -271,8 +271,8 @@ surrogates_RShiny<-function(timeseries,winsize=50,detrending=c("no","gaussian","
   #       arma[ij,jj+1]=ARMA$aic		
   # 		print(paste("AR","MA", "AIC"),quote=FALSE)
   # 		print(paste(ij,jj,ARMA$aic),zero.print=".",quote=FALSE)
-}
-}
+# }
+# }
 
 # Simulate ARMA(p,q) model fitted on residuals
 #   ind=which(arma==min(arma),arr.ind=TRUE)
