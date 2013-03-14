@@ -282,7 +282,7 @@ Ktauestind_ar1 <- numeric()
 Ktauestind_var <- numeric()
 
 for (jjj in 1:boots){
-  x=arima.sim(n = length(nsmY), list(ar = c(ARMA$coef[1]), ma = 0, sd=sqrt(ARMA$sigma2))
+  x=arima.sim(n = length(nsmY), list(ar = ARMA$coef[1], ma = 0, sd=sqrt(ARMA$sigma2)))
   
   ## Rearrange data for indicator calculation
   nMR1<-matrix(data=NA,nrow=mw,ncol=omw)
