@@ -4,7 +4,7 @@ library(shiny)
 library(ggplot2)
 
 # if (try(library(devtools)) == "try-error") {install.packages("devtools")}
-library(devtools)
+# library(devtools)
 
 # if (try(library(earlywarnings)) == "try-error") {install_github(repo = "earlywarnings-R", username = "earlywarningtoolbox", subdir = "earlywarnings", ref = "master")}
 library(earlywarnings)
