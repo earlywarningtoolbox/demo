@@ -80,7 +80,7 @@ min = 0, max = 0.5, value = 0.002, step = 0.001),
 
 sliderInput(inputId = 'grid.size',
 label = 'Grid size',
-min = 10, max = 200, value = 25, step = 5),
+min = 10, max = 100, value = 25, step = 5),
 
 sliderInput(inputId = 'cutoff',
 label = 'Cutoff for visualizing the potential landscape',

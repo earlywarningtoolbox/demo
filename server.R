@@ -1,12 +1,12 @@
 library(shiny)
 
-if (try(library(ggplot2)) == "try-error") {install.packages("ggplot2")}
+# if (try(library(ggplot2)) == "try-error") {install.packages("ggplot2")}
 library(ggplot2)
 
-if (try(library(devtools)) == "try-error") {install.packages("devtools")}
+# if (try(library(devtools)) == "try-error") {install.packages("devtools")}
 library(devtools)
 
-if (try(library(earlywarnings)) == "try-error") {install_github(repo = "earlywarnings-R", username = "earlywarningtoolbox", subdir = "earlywarnings", ref = "master")}
+# if (try(library(earlywarnings)) == "try-error") {install_github(repo = "earlywarnings-R", username = "earlywarningtoolbox", subdir = "earlywarnings", ref = "master")}
 library(earlywarnings)
 
 
