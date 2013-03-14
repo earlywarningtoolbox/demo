@@ -48,7 +48,7 @@
 # 'shiny::runApp()
 #' @keywords early-warning
 
-qda_RShiny <- function(timeseries, param = NULL, winsize = 50, detrending=c("no","gaussian","linear","first-diff"), bandwidth=NULL, boots = 100, s_level = 0.05, cutoff=0.05, detection.threshold = 0.002, grid.size = 50, logtransform=FALSE, interpolate=FALSE, analysis = c("Indicator trend analysis", "Trend significance analysis","Potential analysis")){
+qda_RShiny <- function(timeseries, param = NULL, winsize = 50, detrending=c("no","gaussian","linear","first-diff"), bandwidth=NULL, boots = 50, s_level = 0.05, cutoff=0.05, detection.threshold = 0.002, grid.size = 50, logtransform=FALSE, interpolate=FALSE, analysis = c("Indicator trend analysis", "Trend significance analysis","Potential analysis")){
   
   timeseries <- data.matrix(timeseries)
   
